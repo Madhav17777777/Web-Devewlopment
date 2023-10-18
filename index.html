@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify -Your favourite music is here</title>
+    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class ="brand"><img src ="logo.png" alt="Spotify">Spotify</li>
+           
+        </ul>
+    </nav>
+    <div class="container">
+       
+        <div class="songlist">
+            <div class="songItem">
+                <img id="coverimage" src="cover.jpg" alt="1">
+                <span class="songname">Kina We Kiss Forever</span>
+                <span class="songlistplay"><span class="timestamp">03:08<i id="0"class="far fa fa-play-circle"></i></span></span>
+            </div>
+            <div class ="songItem">
+                <img id="coverimage" src="cover.jpg" alt="1">
+                <span class="songname">Tum hi ho</span>
+                <span class="songlistplay"><span class="timestamp">04:22<i id="1"class="far fa fa-play-circle"></i></span></span>
+            </div>
+        </div>
+        <div class ="songbanner"></div>
+    </div>
+    <div class ="bottom">
+        <input type="range" name="range" id="myprogressbar" min="0"value="0" max="100">
+        <div class="icons">
+            <i id="next" class="fas fa-3x fa-fast-backward"></i>
+            <i class="far fa-3x fa-play-circle" id ="masterPlay"></i>
+           <i id="prev" class="fas fa-3x fa-fast-forward"></i>
+        </div>
+        <div class="songinfo">
+            <img src="playing.gif" width="42px" alt="" id="gif">
+            <span id="songinfo"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
